@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Central Oficial de Regras do GamaMC" />
+  <title>GamaMC — Central de Regras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">G</div>
+      <div>
+        <div class="brand-name">GamaMC</div>
+        <div class="brand-subtitle">Central de Regras</div>
+      </div>
+    </div>
+
+    <nav class="rule-nav" aria-label="Seções das regras">
+      <a href="#pvp" data-section="pvp"><span>01</span> PvP e conflitos</a>
+      <a href="#clas" data-section="clas"><span>02</span> Clãs e guerras</a>
+      <a href="#hacks" data-section="hacks"><span>03</span> Hacks e exploits</a>
+      <a href="#falhas" data-section="falhas"><span>04</span> Falhas técnicas</a>
+      <a href="#dinheiro-real" data-section="dinheiro-real"><span>05</span> Dinheiro real</a>
+      <a href="#conta" data-section="conta"><span>06</span> Segurança da conta</a>
+      <a href="#identidade" data-section="identidade"><span>07</span> Nicks, clãs e skins</a>
+      <a href="#chat" data-section="chat"><span>08</span> Chat, spam e flood</a>
+      <a href="#impersonacao" data-section="impersonacao"><span>09</span> Falsa identidade</a>
+      <a href="#golpes" data-section="golpes"><span>10</span> Golpes</a>
+      <a href="#discord" data-section="discord"><span>11</span> Discord</a>
+      <a href="#punicoes" data-section="punicoes"><span>12</span> Punições</a>
+      <a href="#principio" data-section="principio"><span>13</span> Princípio Gama</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="status-dot"></div>
+      <span>Documento oficial</span>
+    </div>
+  </aside>
+
+  <div class="content-wrap">
+    <header class="topbar">
+      <button class="menu-button" id="menuButton" aria-label="Abrir menu">☰</button>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+        <input id="searchInput" type="search" placeholder="Pesquisar regra, assunto ou palavra-chave..." autocomplete="off" />
+        <kbd>Ctrl K</kbd>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="eyebrow">REGRAS OFICIAIS • GAMAMC</div>
+        <h1>O mundo é nosso.<br><span>A história é de todos.</span></h1>
+        <p>
+          O GamaMC é semi-anárquico: rivalidades, PvP, guerras, alianças e traições fazem parte da experiência.
+          A moderação existe para preservar a estabilidade, a segurança e os limites essenciais da comunidade
+          sem transformar o servidor em um ambiente excessivamente controlado.
+        </p>
+        <div class="hero-cards">
+          <div class="mini-card"><strong>13</strong><span>seções oficiais</span></div>
+          <div class="mini-card"><strong>03/10/2026</strong><span>última atualização</span></div>
+          <div class="mini-card"><strong>1 fonte</strong><span>referência oficial da staff</span></div>
+        </div>
+      </section>
+
+      <div class="search-results-info" id="searchInfo" hidden></div>
+
+      <section class="rule-section searchable" id="pvp">
+        <div class="section-number">01</div>
+        <div class="section-content">
+          <div class="section-kicker">COMBATE • RIVALIDADE • RISCO</div>
+          <h2>PvP e conflitos</h2>
+          <p class="lead">O PvP é parte central da identidade do GamaMC. Fora das áreas especificamente protegidas, entrar no mundo significa aceitar o risco de combate, perseguição, emboscada e perda de recursos.</p>
+
+          <div class="info-grid">
+            <article class="info-card good"><span>Permitido</span><h3>Conflito legítimo</h3><p>Matar jogadores, perseguir rivais, organizar emboscadas, roubar recursos obtidos dentro das mecânicas permitidas e trair alianças faz parte da proposta.</p></article>
+            <article class="info-card dark"><span>Sem intervenção</span><h3>A staff não decide guerras</h3><p>A administração não entra para determinar quem “merecia ganhar”, devolver item perdido em PvP ou desfazer uma traição legítima.</p></article>
+          </div>
+
+          <div class="example-box">
+            <strong>Exemplo prático</strong>
+            <p>Você saiu da base com seus melhores itens, foi emboscado por um clã rival e perdeu tudo. Isso é consequência normal do jogo e não gera reembolso.</p>
+          </div>
+
+          <div class="staff-box">
+            <strong>Quando a staff entra?</strong>
+            <p>Quando o conflito deixa de ser gameplay e envolve hack, exploit, tentativa de derrubar o servidor, fraude externa, ameaça real ou outra violação prevista nas regras.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="clas">
+        <div class="section-number">02</div>
+        <div class="section-content">
+          <div class="section-kicker">TERRITÓRIO • ALIANÇAS • GUERRAS</div>
+          <h2>Clãs e guerras</h2>
+          <p class="lead">Clãs são livres para criar histórias, rivalidades e alianças. Para evitar confusão administrativa e guerras impossíveis de acompanhar, conflitos oficiais seguem uma estrutura simples.</p>
+
+          <div class="rule-box neutral">
+            <div class="rule-label">Regras operacionais</div>
+            <ul>
+              <li>Um clã em guerra ativa não deve iniciar outra guerra simultaneamente.</li>
+              <li>Clãs externos não devem interferir diretamente em uma guerra já registrada entre outros grupos.</li>
+              <li>Guerras relevantes devem ser registradas no canal apropriado do Discord.</li>
+              <li>A administração pode exigir registro quando houver disputa sobre início, participantes ou encerramento.</li>
+            </ul>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card dark"><span>Objetivo</span><h3>Histórico organizado</h3><p>O registro de guerra serve para preservar a história do servidor e reduzir discussões sobre quem estava oficialmente envolvido.</p></article>
+            <article class="info-card good"><span>Liberdade</span><h3>Sem roteiro imposto</h3><p>A staff não escolhe vencedores, estratégias, alianças ou termos de rendição. Isso fica por conta dos jogadores.</p></article>
+          </div>
+
+          <div class="example-box"><strong>Exemplo prático</strong><p>Dois clãs entram em guerra registrada. Um terceiro grupo não pode usar a guerra como desculpa para interferir diretamente no conflito oficial.</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="hacks">
+        <div class="section-number">03</div>
+        <div class="section-content">
+          <div class="section-kicker">ANTI-CHEAT • INTEGRIDADE • SEGURANÇA</div>
+          <h2>Hacks, exploits e abuso técnico</h2>
+          <p class="lead">Semi-anarquia não significa ausência de limite técnico. Qualquer vantagem obtida por software, falha ou manipulação que comprometa a integridade do servidor pode gerar punição.</p>
+
+          <div class="rule-box forbidden">
+            <div class="rule-label">Proibido</div>
+            <ul>
+              <li>Clientes modificados ou hacks com vantagem injusta.</li>
+              <li>Exploits de duplicação ou geração indevida de recursos.</li>
+              <li>Bugs usados intencionalmente para obter vantagem.</li>
+              <li>Tentativas de travar, derrubar ou degradar o servidor.</li>
+              <li>Burlar anti-cheat, punições, verificações ou sistemas de segurança.</li>
+            </ul>
+          </div>
+
+          <div class="staff-box">
+            <strong>Como a staff avalia?</strong>
+            <p>Logs, comportamento in-game, registros do anti-cheat, evidências técnicas e reincidência podem ser considerados em conjunto. A punição não depende de um único sinal isolado quando houver outras evidências consistentes.</p>
+          </div>
+
+          <div class="example-box"><strong>Diferença importante</strong><p>Usar uma mecânica forte do próprio Minecraft não é exploit só porque é eficiente. Exploit é abusar de uma falha não intencional para obter vantagem.</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="falhas">
+        <div class="section-number">04</div>
+        <div class="section-content">
+          <div class="section-kicker">LOGS • ROLLBACK • ERROS TÉCNICOS</div>
+          <h2>Perdas causadas por falhas técnicas</h2>
+          <p class="lead">A administração diferencia perda normal de gameplay de perda provocada por uma falha real do servidor.</p>
+
+          <div class="info-grid">
+            <article class="info-card bad"><span>Não há devolução</span><h3>Gameplay normal</h3><p>PvP, morte, traição, queda causada pelo próprio jogador, item jogado fora ou erro de decisão não geram reembolso.</p></article>
+            <article class="info-card orange"><span>Pode haver análise</span><h3>Falha comprovada</h3><p>Crash, rollback, corrupção de inventário ou erro de salvamento podem ser analisados pela equipe técnica.</p></article>
+          </div>
+
+          <div class="staff-box"><strong>Critério</strong><p>A abertura de análise não garante devolução. A staff verifica logs e evidências disponíveis e decide se existe base técnica suficiente para restaurar algo.</p></div>
+          <div class="example-box"><strong>Exemplo prático</strong><p>Se o servidor cair durante uma transação e o item desaparecer por erro de salvamento confirmado, o caso pode ser revisado. Se o item foi perdido numa morte comum, não.</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="dinheiro-real">
+        <div class="section-number">05</div>
+        <div class="section-content">
+          <div class="section-kicker">PIX • VENDA EXTERNA • FRAUDE</div>
+          <h2>Comércio por dinheiro real</h2>
+          <p class="lead">A economia entre jogadores deve permanecer dentro do ecossistema do servidor. Comprar ou vender vantagens in-game por dinheiro real fora dos canais oficiais é proibido.</p>
+
+          <div class="rule-box forbidden">
+            <div class="rule-label">Inclui</div>
+            <ul>
+              <li>Venda de itens ou moedas por PIX.</li>
+              <li>Venda de bases, territórios ou recursos por dinheiro real.</li>
+              <li>Venda ou compra de contas.</li>
+              <li>Pagamento externo por proteção, vantagem ou serviço in-game.</li>
+            </ul>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card dark"><span>Por quê?</span><h3>Proteção da comunidade</h3><p>Isso reduz fraude, chargeback, golpe financeiro, discussão impossível de verificar e concorrência com canais oficiais.</p></article>
+            <article class="info-card orange"><span>Responsabilidade</span><h3>Acordo externo não é protegido</h3><p>A staff não garante pagamento, entrega ou recuperação de valores envolvidos em acordo financeiro entre jogadores.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="conta">
+        <div class="section-number">06</div>
+        <div class="section-content">
+          <div class="section-kicker">SENHA • ACESSO • RESPONSABILIDADE</div>
+          <h2>Segurança e responsabilidade da conta</h2>
+          <p class="lead">A conta representa o jogador dentro do GamaMC. Quem controla a conta responde pelo que é feito nela.</p>
+
+          <div class="rule-box neutral">
+            <div class="rule-label">Responsabilidade do jogador</div>
+            <ul>
+              <li>Não compartilhar senha.</li>
+              <li>Evitar emprestar a conta.</li>
+              <li>Usar credenciais seguras.</li>
+              <li>Comunicar rapidamente acessos suspeitos quando houver evidência.</li>
+            </ul>
+          </div>
+
+          <div class="example-box"><strong>Exemplo prático</strong><p>“Foi meu amigo usando minha conta” não remove automaticamente uma punição. Para fins de moderação, a conta continua vinculada às ações praticadas nela.</p></div>
+          <div class="staff-box"><strong>Limite da administração</strong><p>A staff não consegue assumir responsabilidade por perdas causadas por compartilhamento voluntário de senha ou acesso concedido a terceiros.</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="identidade">
+        <div class="section-number">07</div>
+        <div class="section-content">
+          <div class="section-kicker">NICK • TAG • SKIN • AVATAR</div>
+          <h2>Nicknames, clãs, skins e identidade visual</h2>
+          <p class="lead">A liberdade estética do servidor é ampla, mas não cobre conteúdo explicitamente ofensivo, discriminatório ou usado para perseguição.</p>
+
+          <div class="rule-box forbidden">
+            <div class="rule-label">Não permitido</div>
+            <ul>
+              <li>Racismo, preconceito ou discurso de ódio.</li>
+              <li>Apologia a crimes graves ou grupos violentos.</li>
+              <li>Símbolos ou imagens explicitamente ofensivas.</li>
+              <li>Nomes de clã, tags ou skins criados para assediar um indivíduo ou grupo.</li>
+            </ul>
+          </div>
+
+          <div class="staff-box"><strong>Ação da staff</strong><p>Dependendo do caso, a equipe pode pedir troca imediata do conteúdo, aplicar mute, kick ou punição superior em casos graves ou reincidentes.</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="chat">
+        <div class="section-number">08</div>
+        <div class="section-content">
+          <div class="section-kicker">CHAT GLOBAL • FLOOD • SPAM</div>
+          <h2>Chat, spam e flood</h2>
+          <p class="lead">O chat pode ser caótico, mas precisa continuar funcional. Rivalidade é permitida; impedir os outros de usar o chat não é.</p>
+
+          <div class="info-grid">
+            <article class="info-card good"><span>Permitido</span><h3>Provocação dentro do limite</h3><p>Discussões, rivalidade, comemoração e provocação relacionadas ao jogo podem acontecer, desde que não virem assédio persistente ou conteúdo proibido.</p></article>
+            <article class="info-card bad"><span>Proibido</span><h3>Poluição deliberada</h3><p>Flood, spam repetitivo, caracteres em massa, anúncio excessivo ou mensagens criadas para inutilizar o canal.</p></article>
+          </div>
+
+          <div class="staff-box"><strong>Resposta típica</strong><p>Casos simples podem gerar aviso ou mute. Reincidência e abuso deliberado podem aumentar a punição.</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="impersonacao">
+        <div class="section-number">09</div>
+        <div class="section-content">
+          <div class="section-kicker">IDENTIDADE • ENGENHARIA SOCIAL • GOLPE</div>
+          <h2>Impersonação e falsa identidade</h2>
+          <p class="lead">Não é permitido criar uma identidade propositalmente semelhante à de outra pessoa para enganar a comunidade.</p>
+
+          <div class="rule-box forbidden">
+            <div class="rule-label">Exemplos</div>
+            <ul>
+              <li>Se passar por membro da staff.</li>
+              <li>Copiar nome e aparência de creator ou líder de clã para aplicar golpe.</li>
+              <li>Usar conta semelhante à de outro jogador para prejudicar sua reputação.</li>
+              <li>Enviar mensagens fingindo representar oficialmente o GamaMC.</li>
+            </ul>
+          </div>
+
+          <div class="example-box"><strong>Regra prática</strong><p>Ter um nome parecido por coincidência não é automaticamente infração. O problema é a intenção clara de enganar, confundir ou causar dano.</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="golpes">
+        <div class="section-number">10</div>
+        <div class="section-content">
+          <div class="section-kicker">TRAIÇÃO • NEGOCIAÇÃO • LIMITE</div>
+          <h2>Golpes dentro do jogo</h2>
+          <p class="lead">O GamaMC permite um nível alto de risco social. Nem toda mentira, traição ou negociação ruim é caso de staff.</p>
+
+          <div class="info-grid">
+            <article class="info-card good"><span>Dentro da proposta</span><h3>Risco do mundo</h3><p>Traição entre clãs, blefe, emboscada e acordo in-game quebrado podem fazer parte da experiência semi-anárquica.</p></article>
+            <article class="info-card bad"><span>Fora da proposta</span><h3>Fraude externa</h3><p>Dinheiro real, falsa identidade, abuso de canal oficial, fingir ser staff ou usar fraude financeira ultrapassa o limite do gameplay.</p></article>
+          </div>
+
+          <div class="staff-box"><strong>Como decidir?</strong><p>A pergunta principal é: o caso aconteceu dentro das mecânicas e riscos normais do servidor ou dependeu de fraude externa/identidade falsa?</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="discord">
+        <div class="section-number">11</div>
+        <div class="section-content">
+          <div class="section-kicker">COMUNIDADE • CANAIS • CONDUTA</div>
+          <h2>Discord e comunidade</h2>
+          <p class="lead">O Discord é extensão oficial do GamaMC. A liberdade de rivalidade continua existindo, mas a plataforma não deve virar espaço de perseguição pessoal ou fraude.</p>
+
+          <div class="rule-box forbidden">
+            <div class="rule-label">Não permitido</div>
+            <ul>
+              <li>Spam e flood.</li>
+              <li>Assédio persistente.</li>
+              <li>Ameaças reais.</li>
+              <li>Divulgação maliciosa.</li>
+              <li>Fraude, impersonação ou tentativa de se passar pela staff.</li>
+              <li>Burlar punições com contas alternativas.</li>
+            </ul>
+          </div>
+
+          <div class="example-box"><strong>Limite importante</strong><p>Uma guerra de clãs pode gerar provocação no Discord. O que não pode é transformar a rivalidade do jogo em perseguição pessoal contínua fora do contexto do servidor.</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable" id="punicoes">
+        <div class="section-number">12</div>
+        <div class="section-content">
+          <div class="section-kicker">GRAVIDADE • HISTÓRICO • REINCIDÊNCIA</div>
+          <h2>Punições e análise da staff</h2>
+          <p class="lead">As punições não precisam seguir exatamente a mesma ordem em todos os casos. Gravidade, intenção, impacto, histórico e reincidência influenciam a decisão.</p>
+
+          <div class="punishment-flow">
+            <span>Aviso</span><b>→</b>
+            <span>Mute</span><b>→</b>
+            <span>Kick</span><b>→</b>
+            <span>Ban temporário</span><b>→</b>
+            <span>Ban permanente</span>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card dark"><span>Casos leves</span><h3>Correção de comportamento</h3><p>Spam pontual ou infração simples pode começar com aviso ou mute.</p></article>
+            <article class="info-card bad"><span>Casos graves</span><h3>Ação imediata</h3><p>Hack evidente, ataque técnico, fraude grave ou ameaça real podem justificar punição alta sem etapas intermediárias.</p></article>
+          </div>
+
+          <div class="staff-box"><strong>Registro</strong><p>A equipe deve registrar punições relevantes para manter coerência entre moderadores e evitar decisões contraditórias.</p></div>
+        </div>
+      </section>
+
+      <section class="rule-section searchable featured" id="principio">
+        <div class="section-number">13</div>
+        <div class="section-content">
+          <div class="section-kicker">FILOSOFIA • MODERAÇÃO • GAMAMC</div>
+          <h2>Princípio da moderação Gama</h2>
+          <blockquote>Interferir menos na história criada pelos jogadores e mais na saúde técnica e na segurança que permitem essa história existir.</blockquote>
+          <p class="lead">Essa é a ideia que orienta todas as outras regras.</p>
+
+          <div class="info-grid">
+            <article class="info-card good"><span>A staff não existe para</span><h3>Controlar o mundo</h3><p>Impedir rivalidade, escolher vencedores, desfazer traições, proibir PvP legítimo ou proteger jogadores das consequências normais do jogo.</p></article>
+            <article class="info-card orange"><span>A staff existe para</span><h3>Proteger a estrutura</h3><p>Combater hack, fraude externa, abuso técnico, quebra de segurança e situações que ultrapassem os limites da proposta semi-anárquica.</p></article>
+          </div>
+
+          <div class="final-callout">
+            <span>GamaMC</span>
+            <strong>Liberdade com estrutura.</strong>
+            <p>O jogador cria a história. A staff garante que o mundo continue existindo para ela acontecer.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="empty-state" id="emptyState" hidden>
+        <div class="empty-icon">⌕</div>
+        <h3>Nenhuma regra encontrada</h3>
+        <p>Tente pesquisar “PIX”, “hack”, “clã”, “flood”, “conta”, “skin” ou outro termo.</p>
+      </section>
+
+      <footer class="footer">
+        <div><strong>GamaMC</strong><p>Central Oficial de Regras</p></div>
+        <div class="footer-meta"><span>Última atualização: 03/10/2026</span><span>Fonte oficial da comunidade</span></div>
+      </footer>
+    </main>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
