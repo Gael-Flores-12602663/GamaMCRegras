@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Central Oficial de Regras do GamaMC" />
+  <link rel="canonical" href="https://gamamcregras.vercel.app/">
+  <link rel="icon" type="image/png" href="https://gamamc.com/logo-gamamc.png">
   <title>GamaMC — Central de Regras</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +14,7 @@
 </head>
 <body>
 <div class="app-shell">
+  <div id="sidebarBackdrop" class="sidebar-backdrop" hidden></div>
   <aside class="sidebar" id="sidebar">
     <div class="brand">
       <div class="brand-mark"><img src="https://gamamc.com/logo-gamamc.png" alt="Logo oficial do GamaMC" width="56" height="56" decoding="async"></div>
@@ -45,7 +48,7 @@
 
   <div class="content-wrap">
     <header class="topbar">
-      <button class="menu-button" id="menuButton" aria-label="Abrir menu">☰</button>
+      <button class="menu-button" id="menuButton" aria-label="Abrir menu de regras" aria-expanded="false" aria-controls="sidebar">☰</button>
       <a class="rules-home-link" href="https://gamamc.com/" aria-label="Voltar ao site oficial do GamaMC">← SITE OFICIAL</a><div class="search-wrap">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
         <input id="searchInput" type="search" placeholder="Pesquisar regra, assunto ou palavra-chave..." autocomplete="off" />
