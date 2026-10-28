@@ -6,6 +6,16 @@ const emptyState = document.getElementById("emptyState");
 const sidebar = document.getElementById("sidebar");
 const menuButton = document.getElementById("menuButton");
 
+const sidebarBackdrop=document.getElementById('sidebarBackdrop');
+function setMenu(open){
+ sidebar.classList.toggle('open',open);
+ menuButton.setAttribute('aria-expanded',String(open));
+ menuButton.setAttribute('aria-label',open?'Fechar menu de regras':'Abrir menu de regras');
+ if(sidebarBackdrop)sidebarBackdrop.hidden=!open;
+ document.body.classList.toggle('rules-menu-open',open);
+}
+sidebarBackdrop?.addEventListener('click',()=>setMenu(false));
+
 function normalize(text){
   return text
     .toLowerCase()
@@ -100,12 +110,12 @@ document.addEventListener("keydown", (event) => {
     searchInput.value = "";
     applySearch();
     searchInput.blur();
-    sidebar.classList.remove("open");
+    setMenu(false);
   }
 });
 
 menuButton.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
+  setMenu(!sidebar.classList.contains("open"));
 });
 
 navLinks.forEach(link => {
