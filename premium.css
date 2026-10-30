@@ -94,3 +94,9 @@ body{scrollbar-color:#65402a #0a0d12}
 .search-wrap kbd{white-space:nowrap;color:#aeb4bc;border:1px solid #343b45;background:#0a0d12;border-radius:6px}
 .search-wrap input::-webkit-search-cancel-button{cursor:pointer}
 @media(max-width:650px){.topbar{justify-content:stretch}.search-wrap{height:46px;flex:1}.search-wrap input{font-size:13px}}
+
+
+/* Corrige o filtro da busca: display:grid sobrescrevia o atributo hidden */
+.rule-section[hidden],.search-results-info[hidden],.empty-state[hidden]{display:none!important}
+.search-results-info:not([hidden]){display:block;margin:0 auto 24px;max-width:1120px;padding:13px 18px;border:1px solid #77502c;border-radius:10px;background:#ff790010;color:#ffbc7b;font-size:13px;font-weight:700}
+.searchable mark.highlight{background:#ff9a32;color:#111;border-radius:3px;padding:0 2px;box-decoration-break:clone}
