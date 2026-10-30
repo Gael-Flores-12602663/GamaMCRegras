@@ -57,3 +57,15 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;op
 .footer{text-align:center}
 @media(max-width:960px){.main{padding:28px 22px 70px}.hero{padding:56px 28px}.rule-section{padding:34px 28px}}
 @media(max-width:650px){.main{padding:18px 14px 54px}.hero{padding:46px 20px;border-radius:14px}.hero-cards{grid-template-columns:1fr 1fr}.rule-section{grid-template-columns:1fr;gap:8px;padding:26px 20px;border-radius:13px}.hero h1{font-size:clamp(36px,10vw,53px)}}
+
+
+/* Navegação lateral: barra de rolagem discreta, consistente com a identidade Gama */
+.sidebar{overflow:hidden}
+.rule-nav{min-height:0;flex:1 1 auto;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:#65402a transparent;padding-right:7px;scroll-padding-block:16px;overscroll-behavior:contain}
+.rule-nav::-webkit-scrollbar{width:6px}
+.rule-nav::-webkit-scrollbar-track{background:transparent}
+.rule-nav::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#d46a1b,#71401e);border-radius:99px;border:1px solid #16191e}
+.rule-nav::-webkit-scrollbar-thumb:hover{background:#ff8a26}
+.rule-nav a{min-height:43px;flex-shrink:0}
+.sidebar-footer{flex-shrink:0;background:linear-gradient(180deg,transparent,#10151b);padding-top:17px}
+@media(max-width:900px){.rule-nav{scrollbar-width:thin;padding-right:5px}}
