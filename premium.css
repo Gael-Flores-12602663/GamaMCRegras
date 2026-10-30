@@ -110,3 +110,45 @@ body{scrollbar-color:#65402a #0a0d12}
 @media(min-width:901px){.topbar{grid-template-columns:160px minmax(0,1fr) 160px}.topbar .menu-button{display:none}.topbar .search-wrap{grid-column:2}}
 @media(max-width:900px){.topbar{display:flex;justify-content:center;flex-wrap:wrap}.topbar .menu-button{order:0}.topbar .rules-home-link{order:1}.topbar .search-wrap{order:2;flex:1 1 280px;margin-inline:auto}}
 @media(max-width:650px){.topbar{gap:10px}.topbar .search-wrap{flex-basis:100%;order:3;width:100%;max-width:none}.topbar .rules-home-link{flex:1;justify-content:center}}
+
+
+/* Revisão de alinhamento: mesma coluna para cabeçalho, regras e rodapé. */
+.content-wrap,.section-content{min-width:0}
+.topbar{padding-inline:max(38px,calc((100% - 1120px)/2 + 38px));grid-template-columns:142px minmax(0,1fr) 142px;gap:16px}
+.topbar .search-wrap{width:100%;max-width:780px}
+.rules-home-link{min-height:42px}
+.hero .eyebrow{flex-wrap:wrap;line-height:1.6}
+.hero h1{width:100%;font-size:clamp(36px,5vw,68px);overflow-wrap:anywhere}
+.hero-cards{align-items:stretch}
+.mini-card{justify-content:center;min-width:0}
+.section-number{padding-top:0;line-height:1.15;align-self:start;text-align:center;font-variant-numeric:tabular-nums}
+.section-content>:first-child{margin-top:0}
+.section-content>:last-child{margin-bottom:0}
+.info-grid{align-items:stretch}
+.section-content h2,.section-content h3,.section-content blockquote{overflow-wrap:anywhere}
+.rule-nav a span{flex:0 0 24px;text-align:left}
+.footer{align-items:center;text-align:left;padding-top:36px}
+.footer-meta{text-align:right}
+@media(max-width:1100px) and (min-width:901px){
+ .topbar{padding-inline:22px;grid-template-columns:132px minmax(0,1fr) 132px;gap:12px}
+ .hero{padding-inline:28px}
+ .hero h1{font-size:clamp(36px,4.6vw,55px)}
+ .rule-section{grid-template-columns:56px minmax(0,1fr);gap:18px;padding-inline:26px}
+}
+@media(max-width:900px){
+ .topbar{display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;padding:12px 22px}
+ .topbar .menu-button{display:block;grid-column:1;grid-row:1;margin:0}
+ .topbar .rules-home-link{grid-column:2;grid-row:1;justify-self:end;width:auto}
+ .topbar .search-wrap{grid-column:1/-1;grid-row:2;width:100%;max-width:none;margin:0}
+ .hero h1{font-size:clamp(36px,7vw,62px)}
+}
+@media(max-width:650px){
+ .topbar{padding-inline:14px;gap:10px}
+ .hero-cards{grid-template-columns:1fr;max-width:420px}
+ .mini-card{padding:16px}
+ .section-number{text-align:left;font-size:36px}
+ .rule-section{gap:14px}
+ .footer{align-items:center;text-align:center;gap:18px}
+ .footer-meta{text-align:center;align-items:center}
+ .punishment-flow{gap:8px}
+}
