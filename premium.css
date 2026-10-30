@@ -69,3 +69,14 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;op
 .rule-nav a{min-height:43px;flex-shrink:0}
 .sidebar-footer{flex-shrink:0;background:linear-gradient(180deg,transparent,#10151b);padding-top:17px}
 @media(max-width:900px){.rule-nav{scrollbar-width:thin;padding-right:5px}}
+
+
+/* Barra de rolagem principal — mesmo acabamento da navegação lateral */
+html{scrollbar-width:thin;scrollbar-color:#65402a #0a0d12;scroll-behavior:smooth}
+html::-webkit-scrollbar{width:9px}
+html::-webkit-scrollbar-track{background:#0a0d12}
+html::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#d46a1b,#71401e);border:2px solid #0a0d12;border-radius:99px}
+html::-webkit-scrollbar-thumb:hover{background:#ff8a26}
+body{scrollbar-color:#65402a #0a0d12}
+@media(max-width:650px){html::-webkit-scrollbar{width:5px}html::-webkit-scrollbar-thumb{border-width:1px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
