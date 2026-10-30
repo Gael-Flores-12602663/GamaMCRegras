@@ -38,3 +38,22 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;op
 /* Auditoria: navegação acessível em celular e fechamento por toque fora */
 .sidebar-backdrop{display:none}
 @media(max-width:900px){body.rules-menu-open{overflow:hidden}.sidebar-backdrop:not([hidden]){display:block;position:fixed;inset:0;background:#020408b8;z-index:29;backdrop-filter:blur(2px)}.sidebar{max-width:min(85vw,345px);width:345px}.rule-nav{overscroll-behavior:contain}.topbar .menu-button{flex:none}}
+
+
+/* Layout editorial centralizado - GamaMC 2026 */
+.main{max-width:1120px;margin-inline:auto;padding:42px 38px 90px}
+.hero{min-height:unset;display:flex;align-items:center;text-align:center;flex-direction:column;justify-content:center;padding:74px 48px 66px;margin:0 auto 34px;border-radius:22px;background:radial-gradient(ellipse at 50% 0%,#ff790028,transparent 62%),linear-gradient(155deg,#1a1d24,#0b0e13 78%);border:1px solid #68412a}
+.hero::before{right:50%;transform:translateX(50%);top:-80px;font-size:330px}
+.hero::after{left:50%;transform:translateX(-50%);width:110px}
+.hero .eyebrow{justify-content:center}
+.hero h1{max-width:850px;margin:22px auto 16px;font-size:clamp(40px,5.1vw,76px);line-height:1.04}
+.hero>p{margin:12px auto 0;max-width:680px}
+.rule-hero-motto{text-align:center}
+.hero-cards{width:100%;max-width:760px;margin:32px auto 0;grid-template-columns:repeat(3,minmax(0,1fr))}
+.mini-card{align-items:center;text-align:center}
+.rule-section{min-height:unset;grid-template-columns:74px minmax(0,1fr);gap:24px;padding:42px 40px;margin:0 auto 18px;border-radius:18px;background:linear-gradient(135deg,#181c23,#101319);border:1px solid #343a45}
+.rule-section:hover{transform:translateY(-2px);border-color:#ab6235}
+.section-number{font-size:clamp(32px,4vw,56px);font-weight:900}
+.footer{text-align:center}
+@media(max-width:960px){.main{padding:28px 22px 70px}.hero{padding:56px 28px}.rule-section{padding:34px 28px}}
+@media(max-width:650px){.main{padding:18px 14px 54px}.hero{padding:46px 20px;border-radius:14px}.hero-cards{grid-template-columns:1fr 1fr}.rule-section{grid-template-columns:1fr;gap:8px;padding:26px 20px;border-radius:13px}.hero h1{font-size:clamp(36px,10vw,53px)}}
