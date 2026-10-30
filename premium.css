@@ -100,3 +100,13 @@ body{scrollbar-color:#65402a #0a0d12}
 .rule-section[hidden],.search-results-info[hidden],.empty-state[hidden]{display:none!important}
 .search-results-info:not([hidden]){display:block;margin:0 auto 24px;max-width:1120px;padding:13px 18px;border:1px solid #77502c;border-radius:10px;background:#ff790010;color:#ffbc7b;font-size:13px;font-weight:700}
 .searchable mark.highlight{background:#ff9a32;color:#111;border-radius:3px;padding:0 2px;box-decoration-break:clone}
+
+
+/* Alinhamento preciso do campo de busca no espaço disponível */
+.topbar{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:18px}
+.topbar .rules-home-link{grid-column:1;justify-self:start}
+.topbar .search-wrap{grid-column:2;width:min(100%,780px);max-width:780px;justify-self:center;margin-inline:auto}
+.topbar .menu-button{grid-column:3}
+@media(min-width:901px){.topbar{grid-template-columns:160px minmax(0,1fr) 160px}.topbar .menu-button{display:none}.topbar .search-wrap{grid-column:2}}
+@media(max-width:900px){.topbar{display:flex;justify-content:center;flex-wrap:wrap}.topbar .menu-button{order:0}.topbar .rules-home-link{order:1}.topbar .search-wrap{order:2;flex:1 1 280px;margin-inline:auto}}
+@media(max-width:650px){.topbar{gap:10px}.topbar .search-wrap{flex-basis:100%;order:3;width:100%;max-width:none}.topbar .rules-home-link{flex:1;justify-content:center}}
