@@ -152,3 +152,46 @@ body{scrollbar-color:#65402a #0a0d12}
  .footer-meta{text-align:center;align-items:center}
  .punishment-flow{gap:8px}
 }
+
+
+/* Centralização definitiva dos balões de regras — desktop e mobile */
+.rule-section,
+.rule-section.featured{
+  position:relative;
+  display:block;
+  width:100%;
+  max-width:100%;
+  margin-inline:auto;
+  padding:42px clamp(20px,4vw,46px);
+}
+.rule-section .section-number{
+  display:block;
+  width:100%;
+  margin:0 0 14px;
+  padding:0;
+  text-align:left;
+  line-height:1;
+}
+.rule-section .section-content{
+  width:100%;
+  min-width:0;
+  margin-inline:auto;
+}
+.rule-section .info-grid,
+.rule-section .rule-box,
+.rule-section .example-box,
+.rule-section .staff-box,
+.rule-section .punishment-flow,
+.rule-section .final-callout{
+  width:100%;
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.rule-section .info-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.rule-section .info-card{min-width:0;width:100%}
+@media(max-width:650px){
+  .rule-section,.rule-section.featured{padding:26px 18px}
+  .rule-section .info-grid{grid-template-columns:minmax(0,1fr)}
+  .rule-section .section-number{margin-bottom:12px}
+}
